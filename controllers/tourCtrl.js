@@ -60,23 +60,105 @@ exports.getTourStats = async (req, res) => {
     });
   }
 };
-exports.createMultipleTour = async (req, res) => {
+exports.getMonthPlan = async (req, res) => {
   try {
-    const rawData = fs.readFileSync(`${__dirname}/../test/tourData.json`);
-    const toursData = JSON.parse(rawData);
-    const createTours = await Promise.all(
-      toursData.map(async (tourData) => {
-        return await Tour.create(tourData);
-      })
-    );
-    res.json({
-      status: "successfully",
-      result: createTours.length,
-      tours: createTours,
+    const year = req.params.year * 1;
+    const plan = await Tour.aggregate([
+      { $unwind: "$startDates" },
+      {
+        $match: {
+          startDates: {
+            $gte: new Date(`${year}-01-01`),
+            $lte: new Date(`${year}-12-31`),
+          },
+        },
+      },
+      {
+        $group: {
+          _id: { $month: "$startDates" },
+          numTourStarts: { $sum: 1 },
+          tours: { $push: "$name" },
+        },
+      },
+      {
+        $addFields: {
+          month: "$_id",
+        },
+      },
+      {
+        $project: {
+          _id: 0,
+        },
+      },
+      {
+        $sort: { numTourStarts: -1 },
+      },
+      {
+        $limit: 12,
+      },
+    ]);
+    res.status(200).json({
+      status: "success",
+      data: {
+        plan,
+      },
     });
   } catch (error) {
-    res.status(500).json({
-      status: "failed",
+    res.status(404).json({
+      status: "fail",
+      message: error.message,
+    });
+  }
+};
+// exports.createMultipleTour = async (req, res) => {
+//   try {
+//     const rawData = fs.readFileSync(`${__dirname}/../test/tourData.json`);
+//     const toursData = JSON.parse(rawData);
+//     const createTours = await Promise.all(
+//       toursData.map(async (tourData) => {
+//         return await Tour.create(tourData);
+//       })
+//     );
+//     res.json({
+//       status: "successfully",
+//       result: createTours.length,
+//       tours: createTours,
+//     });
+//   } catch (error) {
+//     res.status(500).json({
+//       status: "failed",
+//       message: error.message,
+//     });
+//   }
+// };
+exports.createTour = async (req, res) => {
+  try {
+    const newTour = await Tour.create(req.body);
+    res.status(201).json({
+      status: "success",
+    });
+  } catch (error) {
+    res.json({
+      status: "fail",
+      message: error.message,
+    });
+  }
+};
+exports.updateTour = async (req, res) => {
+  try {
+    const tour = await Tour.findByIdAndUpdate(req.params.id, req.body, {
+      new: true,
+      runValidators: true,
+    });
+    res.status(200).json({
+      status: "success",
+      data: {
+        tour,
+      },
+    });
+  } catch (error) {
+    res.status(404).json({
+      status: "fail",
       message: error.message,
     });
   }
