@@ -1,100 +1,362 @@
- [
+[
+  {
+    "name": "Halong Bay Adventure",
+    "duration": 3,
+    "maxGroupSize": 20,
+    "difficulty": "easy",
+    "ratingsAverage": 4.5,
+    "ratingsQuantity": 15,
+    "price": 500,
+    "summary": "Discover the beauty of Halong Bay with a cruise.",
+    "description": "Embark on a memorable cruise through the limestone karsts and emerald waters of Halong Bay, a UNESCO World Heritage Site.",
+    "imageCover": "halong-bay.jpg",
+    "images": ["halong-1.jpg", "halong-2.jpg", "halong-3.jpg"],
+    "startDates": ["2024-04-20", "2024-05-15", "2024-06-10"],
+    "startLocation": {
+      "type": "point",
+      "coordinates": [20.9101, 107.1839],
+      "address": "Halong Bay Pier",
+      "description": "Starting point for the cruise."
+    },
+    "locations": [
       {
-        "name": "Hạ Long Bay Cruise",
-        "duration": 3,
-        "maxGroupSize": 20,
-        "difficulty": "medium",
-        "ratingsAverage": 4.8,
-        "ratingsQuantity": 25,
-        "price": 300,
-        "summary": "Explore the stunning Hạ Long Bay on a luxurious cruise.",
-        "description": "Embark on a memorable journey through the UNESCO World Heritage Site of Hạ Long Bay. Cruise along emerald waters, visit enchanting caves and islands, and indulge in delicious seafood feasts.",
-        "imageCover": "halong-cruise-cover.jpg",
-        "images": ["halong-bay-1.jpg", "halong-bay-2.jpg", "halong-bay-3.jpg"],
-        "startDates": ["2024-04-15", "2024-05-10", "2024-06-05"]
+        "type": "point",
+        "coordinates": [20.9101, 107.1839],
+        "address": "Tuan Chau Island",
+        "description": "Visit Tuan Chau Island for water sports and entertainment.",
+        "day": 1
       },
       {
-        "name": "Sapa Trekking Adventure",
-        "duration": 4,
-        "maxGroupSize": 15,
-        "difficulty": "hard",
-        "ratingsAverage": 4.5,
-        "ratingsQuantity": 20,
-        "price": 250,
-        "summary": "Embark on a challenging trekking adventure in the picturesque landscapes of Sapa.",
-        "description": "Experience the rugged beauty of Sapa as you trek through terraced rice fields, encounter ethnic minority villages, and enjoy a homestay with local families.",
-        "imageCover": "sapa-trekking-cover.jpg",
-        "images": ["sapa-1.jpg", "sapa-2.jpg", "sapa-3.jpg"],
-        "startDates": ["2024-04-20", "2024-05-15", "2024-06-10"]
-      },
-      {
-        "name": "Hue Imperial City Tour",
-        "duration": 2,
-        "maxGroupSize": 25,
-        "difficulty": "easy",
-        "ratingsAverage": 4.6,
-        "ratingsQuantity": 30,
-        "price": 150,
-        "summary": "Discover the rich history and culture of Hue's Imperial City.",
-        "description": "Step back in time as you explore the historic landmarks of Hue, including the Imperial City, royal tombs, and Thien Mu Pagoda. Enjoy leisurely strolls along the Perfume River and savor delicious local cuisine.",
-        "imageCover": "hue-imperial-city-cover.jpg",
-        "images": ["hue-1.jpg", "hue-2.jpg", "hue-3.jpg"],
-        "startDates": ["2024-04-25", "2024-05-20", "2024-06-15"]
-      },
-      {
-        "name": "Hoi An Ancient Town Discovery",
-        "duration": 3,
-        "maxGroupSize": 18,
-        "difficulty": "medium",
-        "ratingsAverage": 4.7,
-        "ratingsQuantity": 22,
-        "price": 200,
-        "summary": "Explore the charming ancient town of Hoi An.",
-        "description": "Wander through the picturesque streets of Hoi An and marvel at its well-preserved architecture. Visit historical sites such as the Japanese Covered Bridge and enjoy a cooking class to learn the secrets of Vietnamese cuisine.",
-        "imageCover": "hoian-ancient-town-cover.jpg",
-        "images": ["hoian-1.jpg", "hoian-2.jpg", "hoian-3.jpg"],
-        "startDates": ["2024-05-01", "2024-06-01", "2024-07-01"]
-      },
-      {
-        "name": "Phong Nha - Ke Bang National Park Expedition",
-        "duration": 3,
-        "maxGroupSize": 16,
-        "difficulty": "medium",
-        "ratingsAverage": 4.9,
-        "ratingsQuantity": 28,
-        "price": 280,
-        "summary": "Discover the breathtaking beauty of Phong Nha - Ke Bang National Park.",
-        "description": "Embark on an unforgettable adventure through the lush landscapes and spectacular caves of Phong Nha - Ke Bang National Park. Explore fascinating caves, kayak along scenic rivers, and trek through dense jungles.",
-        "imageCover": "phongnha-kebang-cover.jpg",
-        "images": ["phongnha-1.jpg", "phongnha-2.jpg", "phongnha-3.jpg"],
-        "startDates": ["2024-05-05", "2024-06-05", "2024-07-05"]
-      },
-      {
-        "name": "Mui Ne Sand Dunes Adventure",
-        "duration": 2,
-        "maxGroupSize": 12,
-        "difficulty": "easy",
-        "ratingsAverage": 4.3,
-        "ratingsQuantity": 18,
-        "price": 180,
-        "summary": "Experience the thrill of exploring the sand dunes of Mui Ne.",
-        "description": "Embark on an exhilarating adventure through the surreal landscapes of Mui Ne's sand dunes. Slide down towering sand slopes, explore the mystical Fairy Stream, and witness the daily life of local fishermen.",
-        "imageCover": "muine-sand-dunes-cover.jpg",
-        "images": ["muine-1.jpg", "muine-2.jpg", "muine-3.jpg"],
-        "startDates": ["2024-05-10", "2024-06-10", "2024-07-10"]
-      },
-      {
-        "name": "Da Lat Countryside Exploration",
-        "duration": 3,
-        "maxGroupSize": 20,
-        "difficulty": "medium",
-        "ratingsAverage": 4.6,
-        "ratingsQuantity": 24,
-        "price": 220,
-        "summary": "Discover the tranquil beauty of Da Lat's countryside.",
-        "description": "Escape to the peaceful countryside of Da Lat and immerse yourself in its natural beauty. Visit vibrant flower farms, serene lakes, and charming French villas. Experience the unique culture of the local ethnic minorities.",
-        "imageCover": "dalat-countryside-cover.jpg",
-        "images": ["dalat-1.jpg", "dalat-2.jpg", "dalat-3.jpg"],
-        "startDates": ["2024-05-15", "2024-06-15", "2024-07-15"]
+        "type": "point",
+        "coordinates": [20.9101, 107.1839],
+        "address": "Titop Island",
+        "description": "Explore Titop Island's white sandy beaches and panoramic views.",
+        "day": 2
       }
     ]
+  },
+  {
+    "name": "Sapa Trekking Adventure",
+    "duration": 4,
+    "maxGroupSize": 15,
+    "difficulty": "medium",
+    "ratingsAverage": 4.7,
+    "ratingsQuantity": 20,
+    "price": 600,
+    "summary": "Trek through the picturesque landscapes of Sapa.",
+    "description": "Immerse yourself in the culture of ethnic minorities as you trek through terraced rice fields and traditional villages in Sapa.",
+    "imageCover": "sapa.jpg",
+    "images": ["sapa-1.jpg", "sapa-2.jpg", "sapa-3.jpg"],
+    "startDates": ["2024-05-05", "2024-06-01", "2024-07-10"],
+    "startLocation": {
+      "type": "point",
+      "coordinates": [22.3355, 103.8446],
+      "address": "Sapa Town",
+      "description": "Starting point for trekking."
+    },
+    "locations": [
+      {
+        "type": "point",
+        "coordinates": [22.3355, 103.8446],
+        "address": "Cat Cat Village",
+        "description": "Visit Cat Cat Village to learn about H'mong culture.",
+        "day": 1
+      },
+      {
+        "type": "point",
+        "coordinates": [22.3355, 103.8446],
+        "address": "Lao Chai Village",
+        "description": "Trek to Lao Chai Village and enjoy breathtaking views of the Muong Hoa Valley.",
+        "day": 2
+      }
+    ]
+  },
+  {
+    "name": "Hue Imperial City Tour",
+    "duration": 2,
+    "maxGroupSize": 15,
+    "difficulty": "easy",
+    "ratingsAverage": 4.3,
+    "ratingsQuantity": 12,
+    "price": 350,
+    "summary": "Explore the historical wonders of Hue Imperial City.",
+    "description": "Step back in time as you explore the ancient citadel, imperial tombs, and pagodas of Hue, a UNESCO World Heritage Site.",
+    "imageCover": "hue-imperial-city.jpg",
+    "images": ["hue-1.jpg", "hue-2.jpg", "hue-3.jpg"],
+    "startDates": ["2024-04-25", "2024-05-20", "2024-06-15"],
+    "startLocation": {
+      "type": "point",
+      "coordinates": [16.4637, 107.5909],
+      "address": "Hue Imperial City",
+      "description": "Starting point for the tour."
+    },
+    "locations": [
+      {
+        "type": "point",
+        "coordinates": [16.4637, 107.5909],
+        "address": "Imperial Citadel",
+        "description": "Explore the grandeur of the Imperial Citadel.",
+        "day": 1
+      },
+      {
+        "type": "point",
+        "coordinates": [16.4637, 107.5909],
+        "address": "Tu Duc Tomb",
+        "description": "Visit the ornate tomb of Emperor Tu Duc.",
+        "day": 2
+      }
+    ]
+  },
+  {
+    "name": "Mui Ne Sand Dunes Adventure",
+    "duration": 2,
+    "maxGroupSize": 10,
+    "difficulty": "easy",
+    "ratingsAverage": 4.6,
+    "ratingsQuantity": 18,
+    "price": 300,
+    "summary": "Experience the beauty of Mui Ne's sand dunes.",
+    "description": "Enjoy thrilling activities such as sandboarding and ATV rides amidst the breathtaking landscape of Mui Ne's red and white sand dunes.",
+    "imageCover": "mui-ne-sand-dunes.jpg",
+    "images": ["mui-ne-1.jpg", "mui-ne-2.jpg", "mui-ne-3.jpg"],
+    "startDates": ["2024-05-10", "2024-06-05", "2024-07-01"],
+    "startLocation": {
+      "type": "point",
+      "coordinates": [10.9336, 108.2873],
+      "address": "Mui Ne Town",
+      "description": "Starting point for the adventure."
+    },
+    "locations": [
+      {
+        "type": "point",
+        "coordinates": [10.9336, 108.2873],
+        "address": "Red Sand Dunes",
+        "description": "Experience the stunning sunrise at the Red Sand Dunes.",
+        "day": 1
+      },
+      {
+        "type": "point",
+        "coordinates": [10.9336, 108.2873],
+        "address": "White Sand Dunes",
+        "description": "Enjoy sandboarding and ATV rides at the White Sand Dunes.",
+        "day": 2
+      }
+    ]
+  },
+  {
+    "name": "Hoi An Ancient Town Discovery",
+    "duration": 2,
+    "maxGroupSize": 20,
+    "difficulty": "easy",
+    "ratingsAverage": 4.8,
+    "ratingsQuantity": 25,
+    "price": 400,
+    "summary": "Explore the charming streets of Hoi An Ancient Town.",
+    "description": "Wander through the well-preserved streets of Hoi An Ancient Town, known for its colorful lanterns, tailor shops, and rich cultural heritage.",
+    "imageCover": "hoi-an-ancient-town.jpg",
+    "images": ["hoi-an-1.jpg", "hoi-an-2.jpg", "hoi-an-3.jpg"],
+    "startDates": ["2024-05-15", "2024-06-10", "2024-07-05"],
+    "startLocation": {
+      "type": "point",
+      "coordinates": [15.8801, 108.338],
+      "address": "Hoi An Ancient Town",
+      "description": "Starting point for exploration."
+    },
+    "locations": [
+      {
+        "type": "point",
+        "coordinates": [15.8801, 108.338],
+        "address": "Japanese Covered Bridge",
+        "description": "Visit the iconic Japanese Covered Bridge.",
+        "day": 1
+      },
+      {
+        "type": "point",
+        "coordinates": [15.8801, 108.338],
+        "address": "Hoi An Night Market",
+        "description": "Explore the vibrant Hoi An Night Market.",
+        "day": 2
+      }
+    ]
+  },
+  {
+    "name": "Phong Nha-Ke Bang National Park Expedition",
+    "duration": 3,
+    "maxGroupSize": 12,
+    "difficulty": "medium",
+    "ratingsAverage": 4.9,
+    "ratingsQuantity": 30,
+    "price": 700,
+    "summary": "Discover the stunning caves of Phong Nha-Ke Bang National Park.",
+    "description": "Embark on an unforgettable journey to explore the spectacular caves and karst landscapes of Phong Nha-Ke Bang National Park, a UNESCO World Heritage Site.",
+    "imageCover": "phong-nha-ke-bang.jpg",
+    "images": ["phong-nha-1.jpg", "phong-nha-2.jpg", "phong-nha-3.jpg"],
+    "startDates": ["2024-05-20", "2024-06-15", "2024-07-10"],
+    "startLocation": {
+      "type": "point",
+      "coordinates": [17.5906, 106.2828],
+      "address": "Phong Nha Town",
+      "description": "Starting point for the expedition."
+    },
+    "locations": [
+      {
+        "type": "point",
+        "coordinates": [17.5906, 106.2828],
+        "address": "Paradise Cave",
+        "description": "Explore the magnificent chambers of Paradise Cave.",
+        "day": 1
+      },
+      {
+        "type": "point",
+        "coordinates": [17.5906, 106.2828],
+        "address": "Phong Nha Cave",
+        "description": "Cruise along the Son River to Phong Nha Cave and marvel at its natural beauty.",
+        "day": 2
+      }
+    ]
+  },
+  {
+    "name": "Nha Trang Beach Paradise",
+    "duration": 4,
+    "maxGroupSize": 25,
+    "difficulty": "easy",
+    "ratingsAverage": 4.7,
+    "ratingsQuantity": 22,
+    "price": 550,
+    "summary": "Relax and unwind on the pristine beaches of Nha Trang.",
+    "description": "Indulge in sunbathing, snorkeling, and water sports on the beautiful beaches of Nha Trang, known for its crystal-clear waters and vibrant marine life.",
+    "imageCover": "nha-trang-beach.jpg",
+    "images": ["nha-trang-1.jpg", "nha-trang-2.jpg", "nha-trang-3.jpg"],
+    "startDates": ["2024-05-25", "2024-06-20", "2024-07-15"],
+    "startLocation": {
+      "type": "point",
+      "coordinates": [12.2388, 109.1963],
+      "address": "Nha Trang Beach",
+      "description": "Starting point for relaxation."
+    },
+    "locations": [
+      {
+        "type": "point",
+        "coordinates": [12.2388, 109.1963],
+        "address": "Vinpearl Land",
+        "description": "Visit Vinpearl Land for amusement park rides and entertainment.",
+        "day": 1
+      },
+      {
+        "type": "point",
+        "coordinates": [12.2388, 109.1963],
+        "address": "Hon Mun Island",
+        "description": "Explore the coral reefs and marine life of Hon Mun Island through snorkeling.",
+        "day": 2
+      }
+    ]
+  },
+  {
+    "name": "Da Nang City Discovery",
+    "duration": 3,
+    "maxGroupSize": 15,
+    "difficulty": "easy",
+    "ratingsAverage": 4.6,
+    "ratingsQuantity": 18,
+    "price": 400,
+    "summary": "Explore the vibrant city of Da Nang.",
+    "description": "Discover the modern skyline, ancient temples, and pristine beaches of Da Nang, one of Vietnam's most dynamic cities.",
+    "imageCover": "da-nang-city.jpg",
+    "images": ["da-nang-1.jpg", "da-nang-2.jpg", "da-nang-3.jpg"],
+    "startDates": ["2024-06-01", "2024-07-05", "2024-08-01"],
+    "startLocation": {
+      "type": "point",
+      "coordinates": [16.0544, 108.2022],
+      "address": "Da Nang City",
+      "description": "Starting point for exploration."
+    },
+    "locations": [
+      {
+        "type": "point",
+        "coordinates": [16.0544, 108.2022],
+        "address": "Marble Mountains",
+        "description": "Climb the Marble Mountains for panoramic views of the city and coastline.",
+        "day": 1
+      },
+      {
+        "type": "point",
+        "coordinates": [16.0544, 108.2022],
+        "address": "My Khe Beach",
+        "description": "Relax on the golden sands of My Khe Beach and enjoy water activities.",
+        "day": 2
+      }
+    ]
+  },
+  {
+    "name": "Mekong Delta Discovery",
+    "duration": 2,
+    "maxGroupSize": 20,
+    "difficulty": "easy",
+    "ratingsAverage": 4.9,
+    "ratingsQuantity": 30,
+    "price": 450,
+    "summary": "Explore the vibrant culture of the Mekong Delta.",
+    "description": "Cruise along the Mekong River and explore bustling markets, traditional villages, and lush green rice paddies in the Mekong Delta region.",
+    "imageCover": "mekong-delta.jpg",
+    "images": ["mekong-1.jpg", "mekong-2.jpg", "mekong-3.jpg"],
+    "startDates": ["2024-06-10", "2024-07-15", "2024-08-10"],
+    "startLocation": {
+      "type": "point",
+      "coordinates": [10.0452, 105.7469],
+      "address": "Mekong Delta",
+      "description": "Starting point for the cruise."
+    },
+    "locations": [
+      {
+        "type": "point",
+        "coordinates": [10.0452, 105.7469],
+        "address": "Cai Be Floating Market",
+        "description": "Experience the vibrant atmosphere of the Cai Be Floating Market.",
+        "day": 1
+      },
+      {
+        "type": "point",
+        "coordinates": [10.0452, 105.7469],
+        "address": "Vinh Long Province",
+        "description": "Explore Vinh Long Province's rural life and fruit orchards.",
+        "day": 2
+      }
+    ]
+  },
+  {
+    "name": "Con Dao Island Escape",
+    "duration": 3,
+    "maxGroupSize": 10,
+    "difficulty": "easy",
+    "ratingsAverage": 4.8,
+    "ratingsQuantity": 25,
+    "price": 700,
+    "summary": "Relax and rejuvenate on the pristine beaches of Con Dao Island.",
+    "description": "Escape to the tranquil paradise of Con Dao Island and unwind on its secluded beaches, snorkel in crystal-clear waters, and explore its rich history.",
+    "imageCover": "con-dao-island.jpg",
+    "images": ["con-dao-1.jpg", "con-dao-2.jpg", "con-dao-3.jpg"],
+    "startDates": ["2024-06-20", "2024-07-25", "2024-08-20"],
+    "startLocation": {
+      "type": "point",
+      "coordinates": [8.6961, 106.6073],
+      "address": "Con Dao Island",
+      "description": "Starting point for relaxation."
+    },
+    "locations": [
+      {
+        "type": "point",
+        "coordinates": [8.6961, 106.6073],
+        "address": "Dam Trau Beach",
+        "description": "Relax on the pristine sands of Dam Trau Beach.",
+        "day": 1
+      },
+      {
+        "type": "point",
+        "coordinates": [8.6961, 106.6073],
+        "address": "Con Dao Prison",
+        "description": "Learn about Vietnam's history at Con Dao Prison.",
+        "day": 2
+      }
+    ]
+  }
+]
